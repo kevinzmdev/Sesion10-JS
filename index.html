@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASINCRONA 10</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.2.js" integrity="sha256-pkn2CUZmheSeyssYw3vMp1+xyub4m+e+QK4sQskvuo4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main class="container">
+        <section class="row bg-dark">
+            <article class="col-12 my-4">
+                <h2 class="text-center text-warning">NOTAS<span> - </span> PREMIO</h2>
+            </article>
+            
+            <section class="col-12 ">
+                <form class="row g-3 w-25 m-auto">
+                    <section class="col-12 d-flex justify-content-center input-group">
+                        <span class="input-group-text"><b>Nombre: </b></span>
+                        <input type="text" class="form-control" id="txtNom">
+                    </section>
+
+                    <article class="col-12 d-flex justify-content-center input-group">
+                        <span class="input-group-text px-3" ><b>Nota 1: </b></span>
+                        <input type="number" class="form-control" id="txtNot1">
+                    </article>
+
+                    <article class="col-12 d-flex justify-content-center input-group">
+                        <span class="input-group-text px-3" ><b>Nota 2: </b></span>
+                        <input type="number" class="form-control" id="txtNot2">
+                    </article>
+
+                    <article class="col-12 d-flex justify-content-center input-group">
+                        <span class="input-group-text px-3" ><b>Nota 3: </b></span>
+                        <input type="number" class="form-control" id="txtNot3">
+                    </article>
+
+                    <article class="col-12 d-flex justify-content-center input-group">
+                        <span class="input-group-text px-3" ><b>Nota 4:</b></span>
+                        <input type="number" class="form-control" id="txtNot4">
+                    </article>
+                </form>
+            </section>
+
+
+            <!-- Modal  -->
+            <section class="col-12 d-flex justify-content-center my-4">
+                <button id="mostrarData" class="btn btn-outline-primary me-4">Calcular</button>
+                <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#modalMuestra">Resultado</button>
+                <article class="modal" aria-hidden="false" tabindex="-1" id="modalMuestra">
+                    <section class="modal-dialog">
+                        <section class="modal-content">
+                            <article class="modal-header">
+                                <h3 class="modal-title">Veremos si clasificaste</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </article>
+
+                            <article class="modal-body">
+                                <section class="col-12 d-flex justify-content-center input-group mb-2">
+                                    <span class="input-group-text">Nombre: </span>
+                                    <input type="text" class="form-control" disabled id="muestraNombre">
+                                </section>
+
+                                <section class="col-12 d-flex justify-content-center input-group mb-2">
+                                    <span class="input-group-text">Promedio: </span>
+                                    <input type="text" class="form-control" disabled id="muestraPromedio">
+                                </section>
+
+
+                                <section class="col-12 d-flex justify-content-center input-group mb-2">
+                                    <span class="input-group-text">Premiado: </span>
+                                    <input type="text" class="form-control" disabled id="muestraPremiada">
+                                </section>
+
+                                <section class="col-12 d-flex justify-content-center input-group">
+                                    <span class="input-group-text">Recibe: </span>
+                                    <input type="text" class="form-control" disabled id="muestraRecibe">
+                                </section>
+                            </article>
+                        </section>
+                    </section>
+                </article>
+            </section>
+        </section>
+    </main>
+    <script src="/script10.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
